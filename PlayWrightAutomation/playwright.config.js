@@ -44,6 +44,7 @@ const config = {
     trace: 'on-first-retry',
 
     browserName: "chromium",
+    headless: false
   },
 
   /* Configure projects for major browsers */
