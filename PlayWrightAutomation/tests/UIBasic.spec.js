@@ -10,4 +10,6 @@ test("First Playwright test", async ({ browser }) => {
     await page.locator('#login-password').type("parola");
     await page.locator('button:text("Login")');
     await page.locator('button:text("Login")').click();
+    console.log(await page.title());
+    await expect(page).toHaveTitle("Acasă | Coding for Kids")
 });
